@@ -1,0 +1,82 @@
+body{
+    background-color: hsl(0, 0%, 95%);
+    margin: 0px;
+}
+
+#cards{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding-top: 10%;
+    width: 800px;
+    height: 400px;
+
+}
+
+#card__1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0px 0px 5px;
+}
+
+#card__2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+#card__3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 5px 5px 0px;
+}
+
+img{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.title{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    padding-left: 20px;
+}
+
+.text{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+button{
+    background-color: hsl(0, 0%, 95%);
+    width: 50%;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    mix-blend-mode: lighten;
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+    transition: 100ms;
+}
+button:active{
+    background-color: transparent;
+    color : hsl(0, 0%, 95%);
+    transition: 100ms;
+}
+@media screen and (max-width:675px){
+    #cards{
+        flex-direction: column;
+        width: 400px;
+        height: 200px;
+    }
+    #card__1{
+        border-radius: 5px 5px 0px 0px;
+    }
+    #card__3{
+        border-radius: 0px 0px 5px 5px;
+    }
+}
