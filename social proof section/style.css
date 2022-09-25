@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+header{
+    display: grid;
+    grid-template-areas: 
+    'titulo rate'
+    'text rate';
+    padding: 3%;
+    column-gap: 5px;
+}
+#title{
+    padding-left: 50px;
+    padding-top: 40px;
+}
+#lovers{
+    grid-area: titulo;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    font-size: 400%;
+    width: 40%;
+    padding-bottom: 10px;
+}
+#lovers__text{
+    grid-area: text;
+    width: 40%;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    padding-top: 10px;
+}
+#rate{
+    grid-area: rate;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 150px;
+}
+#rate__1{
+    margin-left: 0;
+}
+#rate__2{
+    margin-left: 25px;
+}
+#rate__3{
+    margin-left: 50px;
+}
+.rate__ord{
+    display: flex;
+    flex: row;
+    align-items: center;
+    border: 1px solid hsl(300, 24%, 96%);
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 15px;
+    width: 120%;
+    height: 30%;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 400;
+    
+}
+#cards{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0px 150px;
+    margin: auto;
+
+}
+.card{
+    background-color: hsl(300, 43%, 22%);
+    width: 80%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-areas: 
+    ' photo name name .'
+    ' photo status status .'
+    '. . . .'
+    '. . . .'
+    ' texto texto texto texto'
+    ;
+    gap: 10px 10px;
+    padding: 20px;
+}
+#card__2{
+    margin-top: 30px;
+}
+#card__3{
+    margin-top: 60px;
+}
+.avaliator__photo{
+    grid-area: photo;
+    border-radius: 50%;
+}
+.avaliator{
+    color: white;
+    grid-area: name;
+}
+.status{
+    color: hsl(333, 80%, 67%);
+    grid-area: status;
+    
+}
+.avaliation{
+    color: white;
+    grid-area: texto;
+}
