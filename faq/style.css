@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(171,146,191);
+    background: linear-gradient(0deg, rgba(171,146,191,1) 0%, rgba(101,101,231,1) 100%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+#quadro{
+    padding: 3%;
+    background-color: white;
+    width: 70%;
+    height: 600px;
+    margin: auto;
+    margin-top: 10%;
+    display: grid;
+    grid-template-areas:
+    '. woman title'
+    'sombra woman asks'
+    '. woman asks'
+    ;
+    border-radius: 20px;
+    
+}
+#woman{
+    position: absolute;
+    grid-area: woman;
+    left: 8%;
+    bottom: 30%;
+    clip: rect(0px, 900px, 1800px, 55px);
+}
+#sombra{
+    grid-area: sombra;
+    position: fixed;
+    right: 58.5%;
+    bottom: 9%;
+    clip: rect(0px, 1000px, 1000px, 545px);
+}
+#dado{
+    grid-area: dado;
+    position: absolute;
+    top: 43%;
+    left: 78px;
+}
+#title{
+    grid-area: title;
+    padding-bottom: 100px;
+    position: absolute;
+    right: 41%;
+}
+.titulo{
+    color:hsl(237, 12%, 33%);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.sumario{
+    padding: 30px;
+    
+    border-bottom:1px solid hsl(240, 5%, 91%) ;
+    width: 350px;
+    cursor: pointer;
+    bottom: 20%;
+}
+
+#asks{
+    grid-area: asks;
+    
+    width: 200px;
+    position: relative;
+}
+.texto{
+    width: 350px;
+    color: hsl(240, 6%, 50%);
+    
+}
+.seta{
+    align-self: center;
+    
+}
