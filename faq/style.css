@@ -6,37 +6,28 @@ body{
     background: rgb(171,146,191);
     background: linear-gradient(0deg, rgba(171,146,191,1) 0%, rgba(101,101,231,1) 100%);
     font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    width: 100%;
 }
 #quadro{
     padding: 3%;
-    background-color: white;
     width: 70%;
-    height: 600px;
+    height: 400px;
     margin: auto;
     margin-top: 10%;
     display: grid;
     grid-template-areas:
-    '. woman title'
-    'sombra woman asks'
-    '. woman asks'
+    '. . title'
+    '. . asks'
+    '. . asks'
     ;
     border-radius: 20px;
-    
+    background-image: url("images/bg-pattern-desktop.svg"),url("images/illustration-woman-online-desktop.svg");
+    background-position: -1090% 75% , -20% 30%;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
 }
-#woman{
-    position: absolute;
-    grid-area: woman;
-    left: 8%;
-    bottom: 30%;
-    clip: rect(0px, 900px, 1800px, 55px);
-}
-#sombra{
-    grid-area: sombra;
-    position: fixed;
-    right: 58.5%;
-    bottom: 9%;
-    clip: rect(0px, 1000px, 1000px, 545px);
-}
+
 #dado{
     grid-area: dado;
     position: absolute;
@@ -45,37 +36,51 @@ body{
 }
 #title{
     grid-area: title;
-    padding-bottom: 100px;
-    position: absolute;
     right: 41%;
+    color:hsl(237, 12%, 33%);
 }
 .titulo{
     color:hsl(237, 12%, 33%);
-    list-style-type: none;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-}
-.sumario{
-    padding: 30px;
-    
-    border-bottom:1px solid hsl(240, 5%, 91%) ;
-    width: 350px;
-    cursor: pointer;
-    bottom: 20%;
+    margin-left: 10px;
+    transition: ease-in 200ms;
+    font-size: 1em;
 }
 
 #asks{
     grid-area: asks;
-    
     width: 200px;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
-.texto{
-    width: 350px;
-    color: hsl(240, 6%, 50%);
-    
-}
+
 .seta{
-    align-self: center;
+    width: 1vw;
+    height: 1.5vh;
+}
+
+.duvida{
+    width: 30vw;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    box-sizing: border-box;
+    float: left;
+    height: 60px;
+    position: relative;
+    padding-top: 20px;
+    cursor: pointer;
     
+}
+
+.replies{
+    display: none;
+    color: hsl(240, 6%, 50%);
+    font-size: 12px;
+}
+
+.titulo:hover{
+    color: hsl(14, 88%, 65%);
+    transition: ease-out 200ms;
 }
