@@ -14,59 +14,47 @@
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  <img id="woman" src="images/illustration-woman-online-desktop.svg" alt="Mulher utilizando computador">
-  <img id="dado" src="images/illustration-box-desktop.svg" alt="Caixa com @">
-  <img id="sombra" src="images/bg-pattern-desktop.svg" alt="Sombra">
-  <div id="quadro">
-
-    
+  <!-- 
+  <img id="dado" src="images/illustration-box-desktop.svg" alt="Caixa com @"> -->
+  <div id="quadro">    
     
     <h1 id="title">FAQ</h1>
+
     <div id="asks">
-      <div class="sumario">
-        <details close>
-          <summary class="titulo" >How many team members can I invite? <img class="seta" src="images/icon-arrow-down.svg" alt="seta para baixo"></summary>
-      
-            <p class="texto">
-              You can invite up to 2 additional users on the Free plan. There is no limit on
-              team members for the Premium plan.
-            </p>
-          </details>
-      </div>
-      <div class="sumario">
-        <details close>
-          <summary class="titulo">What is the maximum file upload size? <img class="seta" src="images/icon-arrow-down.svg" alt="seta para baixo"></summary>
-            <p class="texto">No more than 2GB. All files in your account must fit your allotted storage space.</p>
-        </details>
-      </div>
-      <div class="sumario">
-        <details close>
-        <summary class="titulo">How do I reset my password? <img class="seta" src="images/icon-arrow-down.svg" alt="seta para baixo"></summary>
-      
-          <p class="texto">
-            Click “Forgot password” from the login page or “Change password” from your profile page.
-            A reset link will be emailed to you.
-          </p>
-        </details>
-      </div>
-      <div class="sumario">
-        <details close>
-          <summary class="titulo">Can I cancel my subscription? <img class="seta" src="images/icon-arrow-down.svg" alt="seta para baixo"></summary>
-            <p class="texto">Yes! Send us a message and we’ll process your request no questions asked.</p>
-        </details>
-      </div>
-      <div class="sumario">
-        <details close>
-          <summary class="titulo">Do you provide additional support? <img class="seta" src="images/icon-arrow-down.svg" alt="seta para baixo"></summary>
-            <p class="texto">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-      </details>
+      <div id="question__list">
+        
+        <div id="pergunta-1" class="duvida">
+          <h2 id="titulo__pergunta-1" class="titulo">How many team members can I invite?<img class="seta" src="images/icon-arrow-down.svg" alt="seta para baixo"></h2>
+            <p id="reply_1" class="replies">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+        </div>
+        
+          <div id="pergunta-2" class="duvida">
+            <h2 id="titulo__pergunta-2" class="titulo">What is the maximum file upload size?<img class="seta" src="images/icon-arrow-down.svg" alt="seta para baixo"></h2>
+            <p id="reply_2" class="replies">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          </div>
+        
+        <div id="pergunta-3" class="duvida">
+          <h2 id="titulo__pergunta-3" class="titulo">How do I reset my password?<img class="seta" src="images/icon-arrow-down.svg" alt="seta para baixo"></h2>
+          <p id="reply_3" class="replies">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+        </div>
+        
+        <div id="pergunta-4" class="duvida">
+          <h2 id="titulo__pergunta-4" class="titulo">Can I cancel my subscription?<img class="seta" src="images/icon-arrow-down.svg" alt="seta para baixo"></h2>
+          <p id="reply_4" class="replies">Yes! Send us a message and we’ll process your request no questions asked.</p>
+        </div>
+        
+        <div id="pergunta-5" class="duvida">
+          <h2 id="titulo__pergunta-5" class="titulo">Do you provide additional support?<img class="seta" src="images/icon-arrow-down.svg" alt="seta para baixo"></h2>
+          <p id="reply_5" class="replies">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+        </div>
+
       </div>
     </div>
   </div>
