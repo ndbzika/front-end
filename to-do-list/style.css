@@ -1,0 +1,62 @@
+body{
+    background-color: #f1debd;
+}
+
+#titulo{
+    color: #333e50;
+    text-decoration: underline #5c6e6e;
+}
+
+#info{
+    text-align: center;
+}
+
+#texto{
+    border: 1px solid gray;
+}
+
+#texto:focus{
+    border: none;
+}
+
+#botaoAdicionar{
+    border: none;
+    width: 70px;
+    background-color: #333e50;
+    border-radius: 5px;
+    color: white;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.item{
+    width: 100%;
+    height: 50px;
+    background-color: #331b3b;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.botao{
+    border-radius: 10px;
+    background-color: #320139;
+    color: white;
+    transition: 100ms;
+}
+.botao:hover{
+    background-color: #5c6e6e;
+    transition: 100ms;
+}
+.botao:active{
+    transition: 50ms;
+    background-color: darkred;
+}
