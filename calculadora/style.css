@@ -63,3 +63,11 @@ table{
     font-size: 1.3em;
     color:bisque;
 }
+
+#result{
+    height: 120px;
+}
+
+#num0{
+    width: 120px;
+}
